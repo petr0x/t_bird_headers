@@ -15,7 +15,15 @@
 
 void init_tbird(void);
 void showOnLed(uint8_t);
-uint8_t matrixValue();
-uint8_t readButton();
+void showOnSeg(uint8_t*);
+void turnOnRed(void);
+void turnOffRed(void);
+void turnOnBlue(void);
+void turnOffBlue(void);
+void turnOnGreen(void);
+void turnOffGreen(void);
+uint8_t matrixValue(void);
+uint8_t oldMatrixValue(void);
+uint8_t readButton(void);
 
 #endif
