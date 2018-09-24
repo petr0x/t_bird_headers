@@ -33,6 +33,13 @@ uint8_t USART_receive(void){
 	return UDR1;
 }
 
+void USART_sendString(uint8_t *str){
+	unsigned char i;
+	for(i = 0; str[i] != 0; i++){
+		USART_transmit(str[i]);
+	}
+}
+
 void RS485_init(void){
 
 	DE_DDR |= (1 << DE_PIN);
