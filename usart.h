@@ -25,12 +25,18 @@
 
 #endif 
 
-void USART_init(uint16_t);
-void USART_transmit(uint8_t);
-void USART_sendString(uint8_t *);
-uint8_t USART_receive(void);
-void RS485_init(void);
-void RS485_busToTransmit(void);
-void RS485_busToRecieve(void);
+void UART0_init(uint16_t);
+void UART0_transmit(uint8_t);
+void UART0_print(uint8_t *);
+void UART0_println(uint8_t *);
+uint8_t UART0_receive(void);
+void UART1_init(uint16_t);
+void UART1_transmit(uint8_t);
+void UART1_print(uint8_t *);
+void UART1_println(uint8_t *);
+uint8_t UART1_receive(void);
+// void RS485_init(void);
+// void RS485_busToTransmit(void);
+// void RS485_busToRecieve(void);
 
 #endif
